@@ -1,0 +1,200 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 117440512 bytes for Failed to commit area from 0x0000000091000000 to 0x0000000098000000 of length 117440512.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3391), pid=21652, tid=7200
+#
+# JRE version:  (11.0.30+7) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.30+7-LTS, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dfile.encoding=IBM866 -javaagent:C:\\Users\\Valeriya\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar=destfile=D:\\Valeriya\\HW_JACOCO\\target\\jacoco.exec C:\Users\Valeriya\AppData\Local\Temp\surefire2653681453896040642\surefirebooter11572421400696109838.jar C:\Users\Valeriya\AppData\Local\Temp\surefire2653681453896040642 2026-06-07T22-52-37_367-jvmRun1 surefire150532755111158892tmp surefire_07582150270068296202tmp
+
+Host: AMD Ryzen 7 3700U with Radeon Vega Mobile Gfx  , 8 cores, 6G,  Windows 10 , 64 bit Build 19041 (10.0.19041.5915)
+Time: Sun Jun  7 22:52:38 2026 RTZ 2 (s 10 , 64 bit Build 19041 (10.0.19041.5915) elapsed time: 0.032358 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000026d0de4d000):  JavaThread "Unknown thread" [_thread_in_vm, id=7200, stack(0x000000e938800000,0x000000e938900000)]
+
+Stack: [0x000000e938800000,0x000000e938900000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x64667a]
+V  [jvm.dll+0x7da009]
+V  [jvm.dll+0x7db709]
+V  [jvm.dll+0x7dbdf3]
+V  [jvm.dll+0x269e15]
+V  [jvm.dll+0x643889]
+V  [jvm.dll+0x637d65]
+V  [jvm.dll+0x325e9c]
+V  [jvm.dll+0x325d22]
+V  [jvm.dll+0x32a8f6]
+V  [jvm.dll+0x372dd2]
+V  [jvm.dll+0x372831]
+V  [jvm.dll+0x3015d8]
+V  [jvm.dll+0x3026d5]
+V  [jvm.dll+0x7b4077]
+V  [jvm.dll+0x7b583f]
+V  [jvm.dll+0x3801e9]
+V  [jvm.dll+0x7961df]
+V  [jvm.dll+0x3f0b07]
+V  [jvm.dll+0x3f3071]
+C  [jli.dll+0x52ef]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17374]
+C  [ntdll.dll+0x4cc91]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x0000026d0dc649f0, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x0000026d0de64000 GCTaskThread "GC Thread#0" [stack: 0x000000e938900000,0x000000e938a00000] [id=10560]
+  0x0000026d0de91800 ConcurrentGCThread "G1 Main Marker" [stack: 0x000000e938a00000,0x000000e938b00000] [id=7172]
+  0x0000026d0de93000 ConcurrentGCThread "G1 Conc#0" [stack: 0x000000e938b00000,0x000000e938c00000] [id=23172]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff94be32017]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000026d0de490b0] Heap_lock - owner thread: 0x0000026d0de4d000
+
+Heap address: 0x0000000091000000, size: 1776 MB, Compressed Oops mode: Non-zero based: 0x0000000091000000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (1 events):
+Event: 0.019 Loaded shared library C:\Users\Valeriya\.jdks\corretto-11.0.30\bin\zip.dll
+
+
+Dynamic libraries:
+0x00007ff64bc20000 - 0x00007ff64bc2e000 	C:\Users\Valeriya\.jdks\corretto-11.0.30\bin\java.exe
+0x00007ff9c1bd0000 - 0x00007ff9c1dc8000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ff982df0000 - 0x00007ff982e11000 	C:\Program Files\Avast Software\Avast\aswhook.dll
+0x00007ff9c1990000 - 0x00007ff9c1a52000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ff9bf420000 - 0x00007ff9bf716000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ff9bfaf0000 - 0x00007ff9bfbf0000 	C:\Windows\System32\ucrtbase.dll
+0x00007ff9b8c10000 - 0x00007ff9b8c27000 	C:\Users\Valeriya\.jdks\corretto-11.0.30\bin\jli.dll
+0x00007ff9a2b50000 - 0x00007ff9a2b6b000 	C:\Users\Valeriya\.jdks\corretto-11.0.30\bin\VCRUNTIME140.dll
+0x00007ff9c15a0000 - 0x00007ff9c1741000 	C:\Windows\System32\USER32.dll
+0x00007ff9a14b0000 - 0x00007ff9a174b000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.6456_none_60b8a6cb71f64256\COMCTL32.dll
+0x00007ff9c1780000 - 0x00007ff9c181e000 	C:\Windows\System32\msvcrt.dll
+0x00007ff9bf720000 - 0x00007ff9bf742000 	C:\Windows\System32\win32u.dll
+0x00007ff9c1750000 - 0x00007ff9c177b000 	C:\Windows\System32\GDI32.dll
+0x00007ff9bf9d0000 - 0x00007ff9bfae9000 	C:\Windows\System32\gdi32full.dll
+0x00007ff9bf750000 - 0x00007ff9bf7ed000 	C:\Windows\System32\msvcp_win.dll
+0x00007ff9c0390000 - 0x00007ff9c03bf000 	C:\Windows\System32\IMM32.DLL
+0x00007ff9a2b40000 - 0x00007ff9a2b4c000 	C:\Users\Valeriya\.jdks\corretto-11.0.30\bin\vcruntime140_1.dll
+0x00007ff96e820000 - 0x00007ff96e8ad000 	C:\Users\Valeriya\.jdks\corretto-11.0.30\bin\msvcp140.dll
+0x00007ff94bb20000 - 0x00007ff94c6e4000 	C:\Users\Valeriya\.jdks\corretto-11.0.30\bin\server\jvm.dll
+0x00007ff9bfd20000 - 0x00007ff9bfdd1000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ff9c0e90000 - 0x00007ff9c0f2f000 	C:\Windows\System32\sechost.dll
+0x00007ff9c1000000 - 0x00007ff9c1120000 	C:\Windows\System32\RPCRT4.dll
+0x00007ff9bf840000 - 0x00007ff9bf867000 	C:\Windows\System32\bcrypt.dll
+0x00007ff9c0f30000 - 0x00007ff9c0f9b000 	C:\Windows\System32\WS2_32.dll
+0x00007ff9c1b80000 - 0x00007ff9c1b88000 	C:\Windows\System32\PSAPI.DLL
+0x00007ff9b5440000 - 0x00007ff9b544a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ff9bc4e0000 - 0x00007ff9bc507000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ff9bdaa0000 - 0x00007ff9bdab2000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ff9a2b30000 - 0x00007ff9a2b40000 	C:\Users\Valeriya\.jdks\corretto-11.0.30\bin\verify.dll
+0x00007ff9bd2b0000 - 0x00007ff9bd4b1000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ff9b4d00000 - 0x00007ff9b4d34000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ff9bf310000 - 0x00007ff9bf392000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ff98a270000 - 0x00007ff98a298000 	C:\Users\Valeriya\.jdks\corretto-11.0.30\bin\java.dll
+0x00007ff9991e0000 - 0x00007ff9991ea000 	C:\Users\Valeriya\.jdks\corretto-11.0.30\bin\jimage.dll
+0x00007ff9ba1e0000 - 0x00007ff9ba1ee000 	C:\Users\Valeriya\.jdks\corretto-11.0.30\bin\instrument.dll
+0x00007ff999070000 - 0x00007ff999088000 	C:\Users\Valeriya\.jdks\corretto-11.0.30\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\Valeriya\.jdks\corretto-11.0.30\bin;C:\Windows\SYSTEM32;C:\Program Files\Avast Software\Avast;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.6456_none_60b8a6cb71f64256;C:\Users\Valeriya\.jdks\corretto-11.0.30\bin\server
+
+VM Arguments:
+jvm_args: -Dfile.encoding=IBM866 -javaagent:C:\\Users\\Valeriya\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar=destfile=D:\\Valeriya\\HW_JACOCO\\target\\jacoco.exec 
+java_command: C:\Users\Valeriya\AppData\Local\Temp\surefire2653681453896040642\surefirebooter11572421400696109838.jar C:\Users\Valeriya\AppData\Local\Temp\surefire2653681453896040642 2026-06-07T22-52-37_367-jvmRun1 surefire150532755111158892tmp surefire_07582150270068296202tmp
+java_class_path (initial): C:\Users\Valeriya\AppData\Local\Temp\surefire2653681453896040642\surefirebooter11572421400696109838.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 117440512                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 1862270976                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5836300                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122910970                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122910970                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Users\Valeriya\.jdks\corretto-11.0.30
+JAVA_TOOL_OPTIONS=-Dfile.encoding=IBM866
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\usbipd-win\;C:\Program Files\Git\cmd;C:\Users\Valeriya\AppData\Local\Programs\Eclipse Adoptium\jdk-11.0.29.7-hotspot\bin;C:\Users\Valeriya\AppData\Local\Microsoft\WindowsApps;C:\Users\Valeriya\AppData\Local\Programs\Microsoft VS Code\bin
+USERNAME=Valeriya
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD
+TMP=C:\Users\Valeriya\AppData\Local\Temp
+TEMP=C:\Users\Valeriya\AppData\Local\Temp
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.5915)
+OS uptime: 38 days 13:56 hours
+
+CPU:total 8 (initial active 8) (8 cores per cpu, 2 threads per core) family 23 model 24 stepping 1 microcode 0x0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, ht, tsc, tscinvbit, tscinv, bmi1, bmi2, adx, sha, fma
+
+Memory: 4k page, system-wide physical 7103M (457M free)
+TotalPageFile size 11610M (AvailPageFile size 54M)
+current process WorkingSet (physical memory assigned to process): 11M, peak: 11M
+current process commit charge ("private bytes"): 60M, peak: 172M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.30+7-LTS) for windows-amd64 JRE (11.0.30+7-LTS), built on Jan 15 2026 19:16:40 by "Administrator" with MS VC++ 16.10 / 16.11 (VS2019)
+
+END.
